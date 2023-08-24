@@ -9,8 +9,17 @@ if (number < 100)
 {
     Console.WriteLine("третьей цифры нет");
 }
+else if (number > 999)
+{
+   while (number > 999)
+   {
+    number = number / 10;
+   }
+   number = number % 10;
+   Console.WriteLine(number);
+}
 else
 {
-    int numberTwo = number % 10;
-    Console.WriteLine(numberTwo);
+    number = number % 10;
+    Console.WriteLine(number);
 }
